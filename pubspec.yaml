@@ -1,0 +1,55 @@
+name: groceries_app
+description: A new Flutter project.
+publish_to: "none"
+version: 0.1.0
+
+environment:
+  sdk: ">=3.1.5 <4.0.0"
+
+dependencies:
+  appwrite: ^11.0.1
+  carousel_slider: ^4.2.1
+  flutter:
+    sdk: flutter
+  flutter_native_splash: ^2.3.5
+  flutter_riverpod: ^2.4.5
+  flutter_screenutil: ^5.9.0
+  go_router: ^12.1.0
+  google_fonts: ^6.1.0
+  mask_text_input_formatter: ^2.7.0
+  phone_form_field: ^8.1.0
+  riverpod_annotation: ^2.3.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+  riverpod_generator: ^2.3.5
+  build_runner: ^2.4.6
+  flutter_gen_runner:
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - "assets/image/"
+    - "assets/logo/"
+    - "assets/promotion/"
+
+flutter_gen:
+  output: lib/gen/ # Optional (default: lib/gen/)
+  line_length: 80
+
+flutter_native_splash:
+  color: "#23AA49"
+  color_dark: "#0D1F29"
+  image: assets/logo/logo.png
+  image_dark: assets/logo/logoDark.png
+
+  android_12:
+    image: assets/logo/logo.png
+    color: "#23AA49"
+    icon_background_color: "#23AA49"
+    image_dark: assets/logo/logoDark.png
+    color_dark: "#0D1F29"
+    icon_background_color_dark: "#0D1F29"
